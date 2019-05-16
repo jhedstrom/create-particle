@@ -50,6 +50,7 @@ const setupParticle = () => {
   checkoutLatestTag();
 
   spawn('rm', ['-rf', '.git/'], options);
+  spawn('rm', ['-rf', './composer.json'], options);
   console.log('Running Particle dependency installation...');
   spawnSync('npm', ['install'], options);
   console.log('Running Particle setup...');
