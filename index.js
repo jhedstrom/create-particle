@@ -54,7 +54,7 @@ const setupParticle = () => {
   console.log('Running Particle dependency installation...');
   spawnSync('npm', ['install'], options);
   console.log('Running Particle setup...');
-  spawnSync('npm', ['run', 'setup'], options);
+  spawnSync('npm', ['run', 'setup:pl'], options);
 };
 
 console.log('Cloning Particle repo...');
